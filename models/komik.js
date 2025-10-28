@@ -18,6 +18,10 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false
         }
 
+    }, {
+        tableName: 'komik',
+        timestamps: true,
+        freezeTableName: true
     });
     return komik;
 }
